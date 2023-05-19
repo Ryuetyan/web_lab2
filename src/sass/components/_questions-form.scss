@@ -1,0 +1,62 @@
+.questions-form {
+  @media screen and (min-width: 1200px) {
+    & {
+      max-width: 50%;
+    }
+  }
+}
+
+.card.is-active {
+  border-left: 3px solid blue;
+}
+
+.add-btn {
+  padding: 1.1rem 0;
+
+  border: 1px solid getColor('border');
+
+  background-color: getColor('primary-white');
+
+  & > span {
+    display: inline-block;
+
+    border-bottom: 0.3rem solid getColor('accent');
+
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    transition: color 250ms ease-in-out;
+  }
+
+  &:hover > span {
+    color: getColor('accent');
+  }
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  border: none;
+
+  background-color: transparent;
+  
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent');
+    color: getColor('primary-white');
+  }
+}
+
+.action-button__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

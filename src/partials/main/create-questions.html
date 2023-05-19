@@ -1,0 +1,65 @@
+<section class="pt-3 pb-3">
+  <div class="container">
+    <form name="questionsForm" class="questions-form m-auto">
+      <div class="card rounded-top form-wrapper p-4 mb-3">
+        <h2>Нове опитування</h2>
+        <label class="form-label" for="descr">
+          Введіть опис опитування (функціонально)
+        </label>
+        <input class="form-control" type="text" name="description" id="descr" />
+      </div>
+
+      <div class="card is-active rounded-top p-4 mb-3">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label" for="question"> Запитання </label>
+            <input
+              class="form-control"
+              type="text"
+              name="question"
+              id="question"
+              placeholder="Хто президент України ?"
+            />
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label" for="type">Тип відповіді</label>
+            <select class="form-select" id="type" name="answerType">
+              <option value="radio">Один зі списку</option>
+              <option value="checkbox">Декілька зі списку</option>
+              <option value="text" selected>текст (рядок)</option>
+              <option value="textarea">текст (абзац)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="answer"> Коротка відповідь </label>
+          <input class="form-control" id="answer" type="text" name="answer" />
+        </div>
+
+        <hr />
+
+        <div>
+          <button
+            class="action-button ms-auto"
+            type="button"
+            aria-label="delete question"
+          >
+            <svg class="action-button__icon">
+              <use href="./images/icons/sprite.svg#trash-fill"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <button class="add-btn w-100 rounded mb-3" type="button">
+        <span>+ Додати запитання</span>
+      </button>
+
+      <button class="btn btn-primary w-100 pt-3 pb-3" type="submit">
+        Створити опитування
+      </button>
+    </form>
+  </div>
+</section>
