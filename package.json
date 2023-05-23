@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/web_lab1",
+  "homepage": "https://goitacademy.github.io/parcel-project-template",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /web_lab1/"
+    "build": "parcel build src/*.html --public-url /parcel-project-template/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/web_lab1.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/web_lab1/issues"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
