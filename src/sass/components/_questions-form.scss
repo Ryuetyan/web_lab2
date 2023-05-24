@@ -6,8 +6,44 @@
   }
 }
 
-.card.is-active {
-  border-left: 3px solid blue;
+.card {
+  opacity: 0;
+
+  //   border-left: var(--bs-card-border-width) solid var(--bs-card-border-color);
+
+  transition: opacity 250ms ease-in-out, border-left 250ms ease-in-out;
+
+  &.is-active {
+    border-left: var(--bs-card-border-width) solid getColor('accent');
+  }
+
+  &.is-show {
+    opacity: 1;
+  }
+}
+
+.form-label {
+  max-width: 100%;
+  width: 100%;
+}
+
+.form-control {
+  &.is-correct {
+    color: green;
+    box-shadow: rgba(26, 109, 18, 0.3) 0px 1px 2px 0px,
+      rgba(21, 119, 29, 0.15) 0px 1px 3px 1px;
+    // box-shadow: 0 0 0 0.25rem #16810840;
+  }
+}
+
+.input-group {
+  opacity: 1;
+
+  transition: opacity 250ms ease-in-out;
+
+  &.is-deleted {
+    opacity: 0;
+  }
 }
 
 .add-btn {
@@ -45,11 +81,16 @@
   border: none;
 
   background-color: transparent;
-  
+
   transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
 
   &:hover,
   &:focus {
+    background-color: getColor('accent');
+    color: getColor('primary-white');
+  }
+
+  &.is-active {
     background-color: getColor('accent');
     color: getColor('primary-white');
   }
